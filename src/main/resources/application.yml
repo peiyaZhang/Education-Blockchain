@@ -1,0 +1,13 @@
+spring:
+  jackson:
+    time-zone: "GMT+8"
+    date-format: "yyyy-MM-dd HH:mm:ss"
+  datasource:
+    url: jdbc:mysql://ecnu.hhzhu.xyz:3306/metasequoia?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
+    username: metasequoia
+    password: metasequoia
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # 更新或创建数据表
+    show-sql: true #控制台显示sql
